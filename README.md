@@ -20,7 +20,7 @@ Action to return release type between two version (semver)
 ## Example usage
 
 ```yml
-- uses: actions/semver-release-type@v1
+- uses: MarcosRava/semver-release-type@v1
   id: semver-release-type
   with:
     current_version: 'v0.0.1'
