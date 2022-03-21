@@ -1,7 +1,6 @@
 name: 'Semver release type'
 description: 'Action to return release type between two versions (semver)'
 author: 'MarcosRava'
-icon: 'activity'
 inputs:
   current_version:
     required: true
@@ -19,3 +18,6 @@ outputs:
 runs:
   using: 'node16'
   main: 'dist/index.js'
+branding:
+  icon: 'activity'  
+  color: 'green'
