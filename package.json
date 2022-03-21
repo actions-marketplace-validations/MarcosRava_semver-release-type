@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "semver-release-type",
   "version": "0.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Action to return release type between two versions (semver)",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -22,13 +22,15 @@
     "node",
     "setup"
   ],
-  "author": "",
+  "author": "Marcos Rava",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.6.0"
+    "@actions/core": "^1.6.0",
+    "semver": "^7.3.5"
   },
   "devDependencies": {
     "@types/node": "^16.10.5",
+    "@types/semver": "^7.3.9",
     "@typescript-eslint/parser": "^5.8.1",
     "@vercel/ncc": "^0.31.1",
     "eslint": "^7.32.0",

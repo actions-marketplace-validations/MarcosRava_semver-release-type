@@ -20,5 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
+        id: action
         with:
-          milliseconds: 1000
+          current_version: 'v1.0.0'
+          next_version: 'v1.0.1'
+      - name: Test result
+        run: |
+          echo ${{ steps.action.release_type }}
+          echo ${{ steps.action.current_version }}
+          echo ${{ steps.action.next_version }}
