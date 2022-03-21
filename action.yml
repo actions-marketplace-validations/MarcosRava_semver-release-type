@@ -1,11 +1,20 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Semver release type'
+description: 'Action to return release type between two versions (semver)'
+author: 'MarcosRava'
 inputs:
-  milliseconds: # change this
+  current_version:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'The current project version'
+  next_version:
+    required: true
+    description: 'The previous project version'
+outputs:
+  release_type:
+    description: 'The difference between two versions by the release type (major, minor, patch, prerelease, build)'
+  current_version:
+    description: 'The current project version'
+  next_version:
+    description: 'The previous project version'
 runs:
   using: 'node16'
   main: 'dist/index.js'
