@@ -1,6 +1,7 @@
 name: 'Semver release type'
 description: 'Action to return release type between two versions (semver)'
 author: 'MarcosRava'
+icon: 'activity'
 inputs:
   current_version:
     required: true
